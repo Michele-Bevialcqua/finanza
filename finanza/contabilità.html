@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilità</title>
+    <link rel="stylesheet" href="contabilità.css">
+</head>
+<body>
+    <h1>Contabilità</h1>
+
+    <div class="inputMensile" id="inputMensile">
+        <input type="number" placeholder="Inserisci la Busta Paga" name="bustaPaga" id="bustaPaga">
+        <div class="checkboxMensili">
+            <div class="checkboxAssicurazione">
+                <input type="checkbox" id="checkAssicurazioe"><p>Assicurazione?</p>
+            </div>
+            <div class="checkboxBollo">
+                <input type="checkbox" id="checkBollo"><p>Bollo?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="speseESvago" id="speseESvago">
+        <div class="spese" id="spese">
+            <h3>Spese</h3>
+            <p id="scrittaRataAuto">Rata auto: €224</p>
+            <p id="scrittaRataCasa">Rata casa: €300</p>
+            <p id="scrittaRataBollo">Rata bollo: €</p>
+            <p id="scrittaAssicurazione">Assicurazione: €232</p>
+            <p>Rimanente:</p><p id="rimanenteDopoSpese"></p>
+        </div>
+
+        <div class="svago" id="svago">
+            <h3>Svago</h3>
+            <p id="soldiPerSvago"></p>
+        </div>
+    </div>
+
+    <div class="risparmio" id="risparmio">
+        <h3>Risparmio</h3>
+        <p id="soldiPerRisparmio"></p>
+    </div>
+
+    <button class="submitButton" onclick="calcolaSpese()">Calcola spese</button>
+
+    
+    <script src="contabilità.js"></script>
+</body>
+</html>
